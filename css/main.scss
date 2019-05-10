@@ -1,0 +1,38 @@
+nav{
+    background-color: #00183b;
+    width: 25%;
+    height: 100vh;
+    position: relative;
+
+    .logo{
+        color: #a9ccff;
+        padding: 50px 0;
+    }
+
+    .nav-link{
+        border-left: 5px #0000ff00 solid;
+        border-bottom: 1px transparent  solid;
+        margin-left: 5px;
+        color: #a9ccff;
+        &:hover{
+            border-bottom: 1px transparent  solid;
+            background-clip: padding-box, border-box;
+			background-origin: padding-box, border-box;
+            background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #5f9fff, #814e3800);
+        }
+    }
+
+    .tree-mode{
+        padding-left: 15px;
+        >*{
+            padding-left: 15px;
+        }
+    }
+
+    .fa-angle-double-left{
+        position: absolute;
+        right: 2px;
+        top: 50%;
+        color: white;
+    }
+}
