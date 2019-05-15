@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
     width: 5px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -43,7 +44,7 @@ nav {
             border-left: 5px #0000ff00 solid;
             border-bottom: 1px transparent solid;
             margin-left: 5px;
-            color: #a9ccff;
+            color: #fff;
 
             &:hover {
                 border-bottom: 1px transparent solid;
@@ -57,7 +58,7 @@ nav {
             border-bottom: 1px transparent solid;
             background-clip: padding-box, border-box;
             background-origin: padding-box, border-box;
-            background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #5f9fff, #814e3800);
+            background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #fff, #814e3800);
         }
 
         .tree-mode {
@@ -92,9 +93,40 @@ nav {
 }
 
 .main-content {
-    padding: 50px 20px;
+    padding: 0 20px;
     padding-left: 220px;
     transition: .5s;
+
+    .favorite-list{
+        padding: 60px 20px;
+        .col{
+            text-align: center;
+            margin: 0 10px;
+            .btn{
+                padding: 0;
+            }
+            .btn-drop{
+                border: 2px #00183b98 solid;
+                padding: 0 5px;
+            }
+            .dropdown-menu{
+                min-width: 5rem;
+            }
+        }
+        .favorite{
+            border-bottom: #052b63 2px solid;
+            background: linear-gradient(to right,#fff,#052b63e1,#052b63e1,#fff);
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            transition: .1s;
+            &:hover{
+                // background: linear-gradient(to right,#052b63,#fff);
+                transform: scale(1.1);
+                // color: #052b63;
+                border-bottom: #052b6300 1px solid;
+            }
+        }
+    }
 
     .search-list {
         padding: 20px 0;
@@ -131,6 +163,7 @@ nav {
                     border: 2px solid #00183b71;
                     border-right: #0000ff00;
                     text-align: start;
+                    letter-spacing: 12px;
                 }
 
                 .dropdown-toggle {
@@ -143,6 +176,7 @@ nav {
             .btn-brand-proxy {
                 border: 2px solid #00183b71;
                 text-align: start;
+                letter-spacing: 12px;
 
                 &:hover {
                     background-color: #00183b;
@@ -162,9 +196,22 @@ nav {
             padding: 2em 0;
 
             .tab {
+                .block{
+                    font-size: 15px;
+                    overflow: auto;
+                    
+                    .block-content{
+                        width: 1850px;
+
+                        .table td, .table th{
+                            padding: 0.2rem;
+                        }
+                    }
+                }
+
                 .nav-tabs {
                     border: none;
-                    border-bottom: 2px solid #079fc9;
+                    border-bottom: 2px solid #5795f1;
                     margin: 0;
                     line-height: 2.5em;
                 }
@@ -187,8 +234,8 @@ nav {
                 .nav-tabs li a:hover,
                 .nav-tabs li.active a {
                     background: #fff;
-                    color: #079fc9;
-                    border: 2px solid #079fc9;
+                    color: #5795f1;
+                    border: 2px solid #2569cf;
                     border-bottom-color: transparent;
                 }
 
@@ -259,3 +306,5 @@ nav {
 .main-content-full{
     padding-left: 35px;
 }
+
+

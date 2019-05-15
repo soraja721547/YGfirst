@@ -70,6 +70,34 @@
     </nav>
 
     <div class="main-content">
+        <div class="favorite-list">
+            <div class="row">
+                <div class="col favorite">上款通道</div>
+                <div class="col favorite">账户设置</div>
+                <div class="col favorite">下款渠道</div>
+                <div class="col favorite">通道类别</div>
+                <div class="col favorite">通道群组</div>
+                <div class="col favorite">时段设置</div>
+                <div class="col favorite">商户管理</div>
+                <div class="col favorite">银卡设置</div>
+                <div class="col"><a href="">快速列</a></div>
+                <div class="col"><a href=""><b>登出<b></a></div>
+                <div class="col">
+                    <button class="btn btn-drop" type="button">
+                        15笔
+                    </button>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">50笔</a>
+                        <a class="dropdown-item" href="#">100笔</a>
+                        <a class="dropdown-item" href="#">200笔</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="search-list row">
             <div class="search-condition col-xl-2 col-sm-4">
                 <input type="text" placeholder="商户代号">
@@ -225,8 +253,6 @@
                                             aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
                                     <li role="presentation" class="index-tab"><a href="#Section2"
                                             aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
-                                    <li role="presentation" class="index-tab"><a href="#Section3"
-                                            aria-controls="messages" role="tab" data-toggle="tab">Section 3</a></li>
                                 </ul>
                                 <!-- Tab panes -->
                                 <div class="tab-content tabs">
@@ -560,16 +586,332 @@
                                         </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade" id="Section2">
-                                        <h3>Section 2</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna
-                                            a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in
-                                            tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius.</p>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section3">
-                                        <h3>Section 3</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna
-                                            a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in
-                                            tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius.</p>
+                                        <div class="block">
+                                            <div class="table-responsive animated fadeInLeft">
+                                                <div class="block-content block-content-full">
+                                                    <table
+                                                        class="table table-bordered table-striped table-vcenter js-dataTable-full table-nowrap">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-center "></th>
+                                                                <th class="">單類</th>
+                                                                <th class="d-sm-table-cell">訂單號</th>
+                                                                <th class="d-sm-table-cell">別名</th>
+                                                                <th class="d-sm-table-cell">商戶號</th>
+                                                                <th class="d-sm-table-cell">訂單金額</th>
+                                                                <th class="d-sm-table-cell">手續費</th>
+                                                                <th class="d-sm-table-cell">到帳金額</th>
+                                                                <th class="d-sm-table-cell">提交時間</th>
+                                                                <th class="d-sm-table-cell">成功時間</th>
+                                                                <th class="d-sm-table-cell">通道名稱</th>
+                                                                <th class="d-sm-table-cell">銀行名稱</th>
+                                                                <th class="d-sm-table-cell">會員代號</th>
+                                                                <th class="d-sm-table-cell">會員IP</th>
+                                                                <th class="d-sm-table-cell">狀態</th>
+                                                                <th class="d-sm-table-cell">查看</th>
+                                                                <th class="d-sm-table-cell">測試</th>
+                                                                <th class="d-sm-table-cell">驗證</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">2</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-success">成功已返</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">3</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">4</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-success">成功已返</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">5</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">6</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-success">成功已返</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">7</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">8</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-success">成功已返</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">9</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-success">成功已返</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">10</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-success">成功已返</span></td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                                </td>
+                                                                <td class="d-sm-table-cell"><a
+                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -587,6 +929,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js">
     </script>
+    <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

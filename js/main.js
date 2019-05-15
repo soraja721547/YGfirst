@@ -10,10 +10,12 @@ $('.index-tab').click(function(){
     $(this).addClass('active');
 })
 
-    $('.nav-link').click(function(){
-        // if($('.nav-link') != $(this)){
-            $('.nav-link').removeClass('active');
-            $(this).addClass('active');
-        // };
-    })
+$('.nav-link').click(function(){
+    $('.nav-link').removeClass('active');
+    
+    $(this).addClass('active');
+    if(!$(this).hasClass('active')){
+        console.log($(this).hasClass('active'));
+    }
+})
 
