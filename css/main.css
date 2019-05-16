@@ -1,10 +1,10 @@
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #a9ccff;
+  background-color: #62cdeb;
   border-radius: 25px;
 }
 
@@ -17,12 +17,26 @@
   padding: 0;
 }
 
+.top-background {
+  position: absolute;
+  top: -640px;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: #3a7fd5;
+  background: -webkit-gradient(linear, left top, right top, from(#3a7fd5), to(#6ebce2));
+  background: linear-gradient(to right, #3a7fd5, #6ebce2);
+  -webkit-transform: skew(0, -1.5deg);
+          transform: skew(0, -1.5deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-box-shadow: inset 0 -3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
 nav {
-  background-color: #00183b;
   width: 200px;
-  height: 100vh;
   position: fixed;
-  overflow-y: auto;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 100;
@@ -30,38 +44,60 @@ nav {
 
 nav .sidebar {
   position: relative;
+  height: 100vh;
+}
+
+nav .sidebar .sidebar-list {
   height: 100%;
+  overflow-y: auto;
+  padding-bottom: 200px;
+}
+
+nav .sidebar .sidebar-list::-webkit-scrollbar {
+  width: 3px;
+}
+
+nav .sidebar .sidebar-list::-webkit-scrollbar-thumb {
+  background-color: #62cdeb3f;
+  border-radius: 25px;
 }
 
 nav .sidebar .logo {
   width: 100%;
-  height: 150px;
+  height: 118px;
   background-image: url(../img/LOGO3.png);
-  background-size: 90%;
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 15px 0;
+  margin: 25px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav .sidebar .nav-link {
   border-left: 5px #0000ff00 solid;
   border-bottom: 1px transparent solid;
   margin-left: 5px;
-  color: #fff;
+  color: #646464;
+  font-weight: 500;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 nav .sidebar .nav-link:hover {
   border-bottom: 1px transparent solid;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #5f9fff, #814e3800);
+  background-image: linear-gradient(135deg, #fff, #fff), linear-gradient(150deg, #079fc9, #814e3800);
+  font-weight: bolder;
 }
 
 nav .sidebar .active {
   border-bottom: 1px transparent solid;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #fff, #814e3800);
+  background-image: linear-gradient(135deg, #fff, #fff), linear-gradient(150deg, #70C6FF, #814e3800);
+  font-weight: bolder;
 }
 
 nav .sidebar .tree-mode {
@@ -76,9 +112,11 @@ nav .fa-angle-double-left {
   position: absolute;
   right: 2px;
   top: calc(100vh - 50%);
-  color: white;
+  color: #079fc9b4;
   -webkit-transition: .8s;
   transition: .8s;
+  font-size: 30px;
+  right: -10px;
 }
 
 nav .fa-angle-double-left:hover {
@@ -88,10 +126,12 @@ nav .fa-angle-double-left:hover {
 nav .icon-rotate {
   -webkit-transform: rotate3d(0, 1, 0, 180deg);
           transform: rotate3d(0, 1, 0, 180deg);
+  font-size: 30px;
+  right: -20px;
 }
 
 .navmini {
-  width: 15px;
+  width: 20px;
   border-radius: 0 50px 50px 0;
 }
 
@@ -125,9 +165,8 @@ nav .icon-rotate {
 }
 
 .main-content .favorite-list .favorite {
-  border-bottom: #052b63 2px solid;
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#052b63e1), color-stop(#052b63e1), to(#fff));
-  background: linear-gradient(to right, #fff, #052b63e1, #052b63e1, #fff);
+  border-bottom: #ffffff85 2px solid;
+  font-weight: 900;
   color: #fff;
   border-radius: 0 0 10px 10px;
   -webkit-transition: .1s;
@@ -137,18 +176,21 @@ nav .icon-rotate {
 .main-content .favorite-list .favorite:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  border-bottom: #052b6300 1px solid;
+  border-bottom: #ffffff 3px solid;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff1e), color-stop(#6ebbe200), to(#6ebbe200));
+  background: linear-gradient(-360deg, #ffffff1e, #6ebbe200, #6ebbe200);
+  cursor: pointer;
 }
 
 .main-content .search-list {
-  padding: 20px 0;
-  border-top: 2px #00183b solid;
+  padding: 20px;
   border-bottom: 1px #00183b solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-content .search-list .search-condition {
@@ -159,6 +201,7 @@ nav .icon-rotate {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 10px;
 }
 
 .main-content .search-list .search-condition > * {
@@ -179,11 +222,18 @@ nav .icon-rotate {
   color: red;
 }
 
+.main-content .search-list .search-condition input {
+  width: 120px;
+}
+
+.main-content .search-list .search-condition .btn-group {
+  width: 120px;
+}
+
 .main-content .search-list .search-condition .btn-group .btn-drop {
   border: 2px solid #00183b71;
   border-right: #0000ff00;
   text-align: start;
-  letter-spacing: 12px;
 }
 
 .main-content .search-list .search-condition .btn-group .dropdown-toggle {
@@ -192,14 +242,21 @@ nav .icon-rotate {
 }
 
 .main-content .search-list .search-condition .btn-brand-proxy {
+  width: 120px;
   border: 2px solid #00183b71;
   text-align: start;
-  letter-spacing: 12px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .main-content .search-list .search-condition .btn-brand-proxy:hover {
-  background-color: #00183b;
-  color: #a9ccff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3a80d52f), color-stop(#6ebbe200), to(#6ebbe200));
+  background: linear-gradient(-360deg, #3a80d52f, #6ebbe200, #6ebbe200);
+  -webkit-box-shadow: #00183b 2px 2px 5px;
+          box-shadow: #00183b 2px 2px 5px;
+  font-weight: bolder;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-content .search-list .search-button {
@@ -226,7 +283,7 @@ nav .icon-rotate {
 
 .main-content .detailed-list .demo .tab .nav-tabs {
   border: none;
-  border-bottom: 2px solid #5795f1;
+  border-bottom: 2px solid #079fc9;
   margin: 0;
   line-height: 2.5em;
 }
@@ -250,8 +307,8 @@ nav .icon-rotate {
 .main-content .detailed-list .demo .tab .nav-tabs li a:hover,
 .main-content .detailed-list .demo .tab .nav-tabs li.active a {
   background: #fff;
-  color: #5795f1;
-  border: 2px solid #2569cf;
+  color: #079fc9;
+  border: 2px solid #079fc9;
   border-bottom-color: transparent;
 }
 

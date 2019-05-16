@@ -19,51 +19,54 @@
 </head>
 
 <body>
+    <div class="top-background"></div>
     <nav class="nav flex-column">
         <div class="sidebar">
             <div class="logo text-center">
                 <!-- <img src="img/LOGO.png" alt="云极股份有限公司"> -->
             </div>
-            <a class="nav-link" data-toggle="collapse" href="#merchantExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample">商戶中心</a>
-            <div class="merchant  tree-mode collapse" id="merchantExample">
-                <a class="nav-link" href="#merchantManagement" data-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">商戶管理</a>
-                <div class="managemen collapse" id="merchantManagement">
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">认证设置</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">密码设置</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">银卡设置</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">通道设置</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">冻结设置</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">未到帐款</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">增减金额</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">佣金设置</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">用户群组</a>
-                    <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">通道余额</a>
+
+            <div class="sidebar-list">
+                <a class="nav-link" data-toggle="collapse" href="#merchantExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">商戶中心</a>
+                <div class="merchant  tree-mode collapse" id="merchantExample">
+                    <a class="nav-link" href="#merchantManagement" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">商戶管理</a>
+                    <div class="managemen collapse" id="merchantManagement">
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">认证设置</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">密码设置</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">银卡设置</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">通道设置</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">冻结设置</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">未到帐款</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">增减金额</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">佣金设置</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">用户群组</a>
+                        <a class="nav-link" href="#" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">通道余额</a>
+                    </div>
+                    <a class="nav-link" href="#merchantExample" data-toggle="collapse" href="#merchantExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">商戶群组</a>
+                    <a class="nav-link" href="#merchantExample" data-toggle="collapse" href="#merchantExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">商戶邀码</a>
                 </div>
-                <a class="nav-link" href="#merchantExample" data-toggle="collapse" href="#merchantExample" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">商戶群组</a>
-                <a class="nav-link" href="#merchantExample" data-toggle="collapse" href="#merchantExample" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">商戶邀码</a>
+
+                <a class="nav-link" href="#">交易管理</a>
+                <a class="nav-link" href="#">提款管理</a>
+                <a class="nav-link" href="#">通道管理</a>
+                <a class="nav-link" href="#">统计管理</a>
+                <a class="nav-link" href="#">报表中心</a>
+                <a class="nav-link" href="#">系统管理</a>
             </div>
-
-            <a class="nav-link" href="#">交易管理</a>
-            <a class="nav-link" href="#">提款管理</a>
-            <a class="nav-link" href="#">通道管理</a>
-            <a class="nav-link" href="#">统计管理</a>
-            <a class="nav-link" href="#">报表中心</a>
-            <a class="nav-link" href="#">系统管理</a>
-
 
         </div>
         <i class="fas fa-angle-double-left"></i>
@@ -81,7 +84,7 @@
                 <div class="col favorite">商户管理</div>
                 <div class="col favorite">银卡设置</div>
                 <div class="col"><a href="">快速列</a></div>
-                <div class="col"><a href=""><b>登出<b></a></div>
+                <button type="button" class="col logout btn btn-outline-dark"><i class="fa fa-user"></i> 登出</button>
                 <div class="col">
                     <button class="btn btn-drop" type="button">
                         15笔
@@ -99,14 +102,15 @@
             </div>
         </div>
         <div class="search-list row">
-            <div class="search-condition col-xl-2 col-sm-4">
+            <div class="search-condition col-xl-1 col-sm-4">
                 <input type="text" placeholder="商户代号">
                 <div class="btn-group">
-                    <button class="btn btn-drop" type="button">
+                    <button class="btn btn-drop btn-sm" type="button">
                         商户群组
                     </button>
-                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -117,11 +121,12 @@
                 </div>
 
                 <div class="btn-group">
-                    <button class="btn btn-drop" type="button">
+                    <button class="btn btn-drop btn-sm" type="button">
                         商户类型
                     </button>
-                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -131,15 +136,16 @@
                     </div>
                 </div>
             </div>
-            <div class="search-condition col-xl-2 col-sm-4">
+            <div class="search-condition col-xl-1 col-sm-4">
                 <input type="text" placeholder="用户代号">
 
                 <div class="btn-group">
-                    <button class="btn btn-drop" type="button">
+                    <button class="btn btn-drop btn-sm" type="button">
                         商户认证
                     </button>
-                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -150,11 +156,12 @@
                 </div>
 
                 <div class="btn-group">
-                    <button class="btn btn-drop" type="button">
+                    <button class="btn btn-drop btn-sm" type="button">
                         商户状态
                     </button>
-                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -164,10 +171,10 @@
                     </div>
                 </div>
             </div>
-            <div class="search-condition col-xl-2 col-sm-4">
+            <div class="search-condition col-xl-1 col-sm-4">
                 <input type="text" placeholder="商户别名">
 
-                <button type="button" class="btn btn-brand-proxy" data-toggle="modal" data-target="#brand">
+                <button type="button" class="btn btn-sm btn-brand-proxy" data-toggle="modal" data-target="#brand">
                     品牌归属
                 </button>
                 <div class="modal fade" id="brand" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -191,7 +198,7 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-brand-proxy" data-toggle="modal" data-target="#proxy">
+                <button type="button" class="btn btn-sm btn-brand-proxy" data-toggle="modal" data-target="#proxy">
                     代理归属
                 </button>
                 <div class="modal fade" id="proxy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -215,6 +222,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="search-condition col-xl-3 col-md-4 col">
                 <div class="row money-list">
                     <div class="col-6 text-right">到账金额：</div>
@@ -250,9 +258,9 @@
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="index-tab active"><a href="#Section1"
-                                            aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
+                                            aria-controls="home" role="tab" data-toggle="tab">信息一</a></li>
                                     <li role="presentation" class="index-tab"><a href="#Section2"
-                                            aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
+                                            aria-controls="profile" role="tab" data-toggle="tab">信息二</a></li>
                                 </ul>
                                 <!-- Tab panes -->
                                 <div class="tab-content tabs">
@@ -265,27 +273,193 @@
                                                         class="table table-bordered table-striped table-vcenter js-dataTable-full table-nowrap">
                                                         <thead>
                                                             <tr>
-                                                                <th class="text-center "></th>
-                                                                <th class="">單類</th>
-                                                                <th class="d-sm-table-cell">訂單號</th>
-                                                                <th class="d-sm-table-cell">別名</th>
-                                                                <th class="d-sm-table-cell">商戶號</th>
-                                                                <th class="d-sm-table-cell">訂單金額</th>
-                                                                <th class="d-sm-table-cell">手續費</th>
-                                                                <th class="d-sm-table-cell">到帳金額</th>
-                                                                <th class="d-sm-table-cell">提交時間</th>
-                                                                <th class="d-sm-table-cell">成功時間</th>
-                                                                <th class="d-sm-table-cell">通道名稱</th>
-                                                                <th class="d-sm-table-cell">銀行名稱</th>
-                                                                <th class="d-sm-table-cell">會員代號</th>
-                                                                <th class="d-sm-table-cell">會員IP</th>
-                                                                <th class="d-sm-table-cell">狀態</th>
-                                                                <th class="d-sm-table-cell">查看</th>
-                                                                <th class="d-sm-table-cell">測試</th>
-                                                                <th class="d-sm-table-cell">驗證</th>
+                                                                <th class="text-center ">商户别名</th>
+                                                                <th class="">商户类型</th>
+                                                                <th class="d-sm-table-cell">商户代号</th>
+                                                                <th class="d-sm-table-cell">到账余额</th>
+                                                                <th class="d-sm-table-cell">冻结金额</th>
+                                                                <th class="d-sm-table-cell">可提金额</th>
+                                                                <th class="d-sm-table-cell">未到账额</th>
+                                                                <th class="d-sm-table-cell">商户认证</th>
+                                                                <th class="d-sm-table-cell">支付管控</th>
+                                                                <th class="d-sm-table-cell">商户状态</th>
+                                                                <th class="d-sm-table-cell">上款状态</th>
+                                                                <th class="d-sm-table-cell">提领状态</th>
+                                                                <th class="d-sm-table-cell">代付状态</th>
+                                                                <th class="d-sm-table-cell">编辑</th>
+                                                                <th class="d-sm-table-cell">删除</th>
+                                                                <th class="d-sm-table-cell">超连</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
+                                                            <tr>
+                                                                <td class="text-center">9818</td>
+                                                                <td class="text-center">商户</td>
+                                                                <td class="d-sm-table-cell text-left">1234567891</td>
+                                                                <td class="d-sm-table-cell text-right">12345678</td>
+                                                                <td class="d-sm-table-cell text-right">12345678</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    12345678</td>
+                                                                <td class="d-sm-table-cell text-right">12345678</td>
+                                                                <td class="d-sm-table-cell text-danger text-center">
+                                                                    已认</td>
+                                                                <td class="d-sm-table-cell text-center">密码</td>
+                                                                <td class="d-sm-table-cell text-center">启用</td>
+                                                                <td class="d-sm-table-cell text-center">启用</td>
+                                                                <td class="d-sm-table-cell text-center">启用</td>
+                                                                <td class="d-sm-table-cell text-center">启用</td>
+                                                                <td class="d-sm-table-cell text-center">编辑</td>
+                                                                <td class="d-sm-table-cell text-center"><span
+                                                                        class="text-danger">删除</span></td>
+                                                                <td class="d-sm-table-cell text-center">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                                                                        id="dropdownMenuReference"
+                                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false" data-reference="parent">
+                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">认证设置</a>
+                                                                        <a class="dropdown-item" href="#">密码设置</a>
+                                                                        <a class="dropdown-item" href="#">银卡设置</a>
+                                                                        <a class="dropdown-item" href="#">通道设置</a>
+                                                                        <a class="dropdown-item" href="#">冻结设置</a>
+                                                                        <a class="dropdown-item" href="#">未到帐款</a>
+                                                                        <a class="dropdown-item" href="#">增减金额</a>
+                                                                        <a class="dropdown-item" href="#">佣金设置</a>
+                                                                        <a class="dropdown-item" href="#">用户群组</a>
+                                                                        <a class="dropdown-item" href="#">通道余额</a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"></td>
+                                                                <td class="text-center">商牌</td>
+                                                                <td class="d-sm-table-cell text-left"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-danger text-center">
+                                                                    未认</td>
+                                                                <td class="d-sm-table-cell text-center">简讯</td>
+                                                                <td class="d-sm-table-cell text-center">关闭</td>
+                                                                <td class="d-sm-table-cell text-center">关闭</td>
+                                                                <td class="d-sm-table-cell text-center">关闭</td>
+                                                                <td class="d-sm-table-cell text-center">关闭</td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"><span
+                                                                        class="text-danger"></span></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"></td>
+                                                                <td class="text-center">商代</td>
+                                                                <td class="d-sm-table-cell text-left"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-danger text-center">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-center">谷马</td>
+                                                                <td class="d-sm-table-cell text-center">停用</td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"><span
+                                                                        class="text-danger"></span></td>
+                                                                <td class="d-sm-table-cell text-center">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                                                                        id="dropdownMenuReference"
+                                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false" data-reference="parent">
+                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">认证设置</a>
+                                                                        <a class="dropdown-item" href="#">密码设置</a>
+                                                                        <a class="dropdown-item" href="#">银卡设置</a>
+                                                                        <a class="dropdown-item" href="#">通道设置</a>
+                                                                        <a class="dropdown-item" href="#">冻结设置</a>
+                                                                        <a class="dropdown-item" href="#">未到帐款</a>
+                                                                        <a class="dropdown-item" href="#">增减金额</a>
+                                                                        <a class="dropdown-item" href="#">佣金设置</a>
+                                                                        <a class="dropdown-item" href="#">用户群组</a>
+                                                                        <a class="dropdown-item" href="#">通道余额</a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"></td>
+                                                                <td class="text-center">商牌</td>
+                                                                <td class="d-sm-table-cell text-left"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-danger text-center">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center">F</td>
+                                                                <td class="d-sm-table-cell text-center">G</td>
+                                                                <td class="d-sm-table-cell text-center">H</td>
+                                                                <td class="d-sm-table-cell text-center">J</td>
+                                                                <td class="d-sm-table-cell text-center">C</td>
+                                                                <td class="d-sm-table-cell text-center"><span
+                                                                        class="text-danger">D</span></td>
+                                                                <td class="d-sm-table-cell text-center">E</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"></td>
+                                                                <td class="text-center">通代</td>
+                                                                <td class="d-sm-table-cell text-left"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-right"></td>
+                                                                <td class="d-sm-table-cell text-danger text-center">
+                                                                </td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"></td>
+                                                                <td class="d-sm-table-cell text-center"><span
+                                                                        class="text-danger"></span></td>
+                                                                <td class="d-sm-table-cell text-center">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                                                                        id="dropdownMenuReference"
+                                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false" data-reference="parent">
+                                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuButton">
+                                                                        <a class="dropdown-item" href="#">认证设置</a>
+                                                                        <a class="dropdown-item" href="#">密码设置</a>
+                                                                        <a class="dropdown-item" href="#">银卡设置</a>
+                                                                        <a class="dropdown-item" href="#">通道设置</a>
+                                                                        <a class="dropdown-item" href="#">冻结设置</a>
+                                                                        <a class="dropdown-item" href="#">未到帐款</a>
+                                                                        <a class="dropdown-item" href="#">增减金额</a>
+                                                                        <a class="dropdown-item" href="#">佣金设置</a>
+                                                                        <a class="dropdown-item" href="#">用户群组</a>
+                                                                        <a class="dropdown-item" href="#">通道余额</a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
                                                             <tr>
                                                                 <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
@@ -311,44 +485,9 @@
                                                                         data-toggle="modal"
                                                                         data-target="#modal-popin1">查看</button>
                                                                 </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
-                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-center">2</td>
-                                                                <td class="text-center">收款</td>
-                                                                <td class="d-sm-table-cell">JJ9332920222</td>
-                                                                <td class="d-sm-table-cell">918-12</td>
-                                                                <td class="d-sm-table-cell">10125</td>
-                                                                <td class="d-sm-table-cell text-success text-right">
-                                                                    2206.90</td>
-                                                                <td class="d-sm-table-cell text-right">2.0</td>
-                                                                <td class="d-sm-table-cell text-danger text-right">
-                                                                    206.90</td>
-                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
-                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
-                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
-                                                                <td class="d-sm-table-cell">銀聯WAP</td>
-                                                                <td class="d-sm-table-cell">test</td>
-                                                                <td class="d-sm-table-cell">190.220.19.20</td>
-                                                                <td class="d-sm-table-cell"><span
-                                                                        class="text-success">成功已返</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-center">3</td>
+                                                                <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
                                                                 <td class="d-sm-table-cell">JJ9332920222</td>
                                                                 <td class="d-sm-table-cell">918-12</td>
@@ -366,47 +505,15 @@
                                                                 <td class="d-sm-table-cell">190.220.19.20</td>
                                                                 <td class="d-sm-table-cell"><span
                                                                         class="text-danger">未處理</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-center">4</td>
-                                                                <td class="text-center">收款</td>
-                                                                <td class="d-sm-table-cell">JJ9332920222</td>
-                                                                <td class="d-sm-table-cell">918-12</td>
-                                                                <td class="d-sm-table-cell">10125</td>
-                                                                <td class="d-sm-table-cell text-success text-right">
-                                                                    2206.90</td>
-                                                                <td class="d-sm-table-cell text-right">2.0</td>
-                                                                <td class="d-sm-table-cell text-danger text-right">
-                                                                    206.90</td>
-                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
-                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
-                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
-                                                                <td class="d-sm-table-cell">銀聯WAP</td>
-                                                                <td class="d-sm-table-cell">test</td>
-                                                                <td class="d-sm-table-cell">190.220.19.20</td>
-                                                                <td class="d-sm-table-cell"><span
-                                                                        class="text-success">成功已返</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-center">5</td>
+                                                                <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
                                                                 <td class="d-sm-table-cell">JJ9332920222</td>
                                                                 <td class="d-sm-table-cell">918-12</td>
@@ -424,47 +531,15 @@
                                                                 <td class="d-sm-table-cell">190.220.19.20</td>
                                                                 <td class="d-sm-table-cell"><span
                                                                         class="text-danger">未處理</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-center">6</td>
-                                                                <td class="text-center">收款</td>
-                                                                <td class="d-sm-table-cell">JJ9332920222</td>
-                                                                <td class="d-sm-table-cell">918-12</td>
-                                                                <td class="d-sm-table-cell">10125</td>
-                                                                <td class="d-sm-table-cell text-success text-right">
-                                                                    2206.90</td>
-                                                                <td class="d-sm-table-cell text-right">2.0</td>
-                                                                <td class="d-sm-table-cell text-danger text-right">
-                                                                    206.90</td>
-                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
-                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
-                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
-                                                                <td class="d-sm-table-cell">銀聯WAP</td>
-                                                                <td class="d-sm-table-cell">test</td>
-                                                                <td class="d-sm-table-cell">190.220.19.20</td>
-                                                                <td class="d-sm-table-cell"><span
-                                                                        class="text-success">成功已返</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-center">7</td>
+                                                                <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
                                                                 <td class="d-sm-table-cell">JJ9332920222</td>
                                                                 <td class="d-sm-table-cell">918-12</td>
@@ -482,18 +557,15 @@
                                                                 <td class="d-sm-table-cell">190.220.19.20</td>
                                                                 <td class="d-sm-table-cell"><span
                                                                         class="text-danger">未處理</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-center">8</td>
+                                                                <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
                                                                 <td class="d-sm-table-cell">JJ9332920222</td>
                                                                 <td class="d-sm-table-cell">918-12</td>
@@ -510,19 +582,16 @@
                                                                 <td class="d-sm-table-cell">test</td>
                                                                 <td class="d-sm-table-cell">190.220.19.20</td>
                                                                 <td class="d-sm-table-cell"><span
-                                                                        class="text-success">成功已返</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-center">9</td>
+                                                                <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
                                                                 <td class="d-sm-table-cell">JJ9332920222</td>
                                                                 <td class="d-sm-table-cell">918-12</td>
@@ -539,19 +608,16 @@
                                                                 <td class="d-sm-table-cell">test</td>
                                                                 <td class="d-sm-table-cell">190.220.19.20</td>
                                                                 <td class="d-sm-table-cell"><span
-                                                                        class="text-success">成功已返</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
-                                                                </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="text-center">10</td>
+                                                                <td class="text-center">1</td>
                                                                 <td class="text-center">收款</td>
                                                                 <td class="d-sm-table-cell">JJ9332920222</td>
                                                                 <td class="d-sm-table-cell">918-12</td>
@@ -568,15 +634,220 @@
                                                                 <td class="d-sm-table-cell">test</td>
                                                                 <td class="d-sm-table-cell">190.220.19.20</td>
                                                                 <td class="d-sm-table-cell"><span
-                                                                        class="text-success">成功已返</span></td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-info">查看</a>
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-secondary">測試</a>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
-                                                                <td class="d-sm-table-cell"><a
-                                                                        class="btn btn-sm btn-rounded btn-alt-warning">驗證</a>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td class="text-center">收款</td>
+                                                                <td class="d-sm-table-cell">JJ9332920222</td>
+                                                                <td class="d-sm-table-cell">918-12</td>
+                                                                <td class="d-sm-table-cell">10125</td>
+                                                                <td class="d-sm-table-cell text-success text-right">
+                                                                    2206.90</td>
+                                                                <td class="d-sm-table-cell text-right">2.0</td>
+                                                                <td class="d-sm-table-cell text-danger text-right">
+                                                                    206.90</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:23:59</td>
+                                                                <td class="d-sm-table-cell">2018-11-12 12:24:10</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP-5</td>
+                                                                <td class="d-sm-table-cell">銀聯WAP</td>
+                                                                <td class="d-sm-table-cell">test</td>
+                                                                <td class="d-sm-table-cell">190.220.19.20</td>
+                                                                <td class="d-sm-table-cell"><span
+                                                                        class="text-danger">未處理</span></td>
+                                                                <td class="d-sm-table-cell">
+                                                                    <button type="button"
+                                                                        class="btn btn-sm btn-rounded btn-alt-info"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modal-popin1">查看</button>
                                                                 </td>
                                                             </tr>
                                                         </tbody>

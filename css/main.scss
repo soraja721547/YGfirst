@@ -1,10 +1,10 @@
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #a9ccff;
+    background-color: #62cdeb;
     border-radius: 25px;
 }
 
@@ -16,41 +16,70 @@
 .col-3 {
     padding: 0;
 }
+.top-background{
+    position: absolute;
+    // z-index: 99;
+    top: -640px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: #3a7fd5;
+    background: linear-gradient(to right, #3a7fd5, #6ebce2);
+    transform: skew(0, -1.5deg);
+    transform-origin: bottom left;
+    box-shadow: inset 0 -3px 10px rgba(0,0,0,0.1);
+}
 
 nav {
-    background-color: #00183b;
+    
     width: 200px;
-    height: 100vh;
+    // height: 100vh;
     position: fixed;
-    overflow-y: auto;
+    
     transition: .5s;
     z-index: 100;
 
     .sidebar {
         position: relative;
-        height: 100%;
+        height: 100vh;
+
+        .sidebar-list{
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 200px;
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #62cdeb3f;
+                border-radius: 25px;
+            }
+        }
 
         .logo {
             width: 100%;
-            height: 150px;
+            height: 118px;
             background-image: url(../img/LOGO3.png);
-            background-size: 90%;
+            background-size: 80%;
             background-position: center;
             background-repeat: no-repeat;
-            margin: 15px 0;
+            margin: 25px 0;
+            transition: .5s;
         }
 
         .nav-link {
             border-left: 5px #0000ff00 solid;
             border-bottom: 1px transparent solid;
             margin-left: 5px;
-            color: #fff;
-
+            color: #646464;
+            font-weight: 500;
+            transform: rotate(-3deg);
             &:hover {
                 border-bottom: 1px transparent solid;
                 background-clip: padding-box, border-box;
                 background-origin: padding-box, border-box;
-                background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #5f9fff, #814e3800);
+                background-image: linear-gradient(135deg, #fff, #fff), linear-gradient(150deg, #079fc9, #814e3800);
+                font-weight: bolder;
             }
         }
 
@@ -58,7 +87,8 @@ nav {
             border-bottom: 1px transparent solid;
             background-clip: padding-box, border-box;
             background-origin: padding-box, border-box;
-            background-image: linear-gradient(135deg, #00183b, #00183b), linear-gradient(150deg, #fff, #814e3800);
+            background-image: linear-gradient(135deg, #fff, #fff), linear-gradient(150deg, #70C6FF, #814e3800);
+            font-weight: bolder;
         }
 
         .tree-mode {
@@ -74,8 +104,10 @@ nav {
         position: absolute;
         right: 2px;
         top: calc(100vh - 50%);
-        color: white;
+        color: #079fc9b4;
         transition: .8s;
+        font-size: 30px;
+        right: -10px;
 
         &:hover {
             cursor: pointer;
@@ -84,11 +116,13 @@ nav {
 
     .icon-rotate {
         transform: rotate3d(0, 1, 0, 180deg);
+        font-size: 30px;
+        right: -20px;
     }
 }
 
 .navmini {
-    width: 15px;
+    width: 20px;
     border-radius: 0 50px 50px 0;
 }
 
@@ -99,6 +133,8 @@ nav {
 
     .favorite-list{
         padding: 60px 20px;
+        // overflow-x: auto;
+        
         .col{
             text-align: center;
             margin: 0 10px;
@@ -114,31 +150,31 @@ nav {
             }
         }
         .favorite{
-            border-bottom: #052b63 2px solid;
-            background: linear-gradient(to right,#fff,#052b63e1,#052b63e1,#fff);
+            border-bottom: #ffffff85 2px solid;
+            font-weight: 900;
             color: #fff;
             border-radius: 0 0 10px 10px;
             transition: .1s;
             &:hover{
-                // background: linear-gradient(to right,#052b63,#fff);
                 transform: scale(1.1);
-                // color: #052b63;
-                border-bottom: #052b6300 1px solid;
+                border-bottom: #ffffff 3px solid;
+                background: linear-gradient(-360deg, #ffffff1e, #6ebbe200, #6ebbe200);
+                cursor: pointer;
             }
         }
     }
 
     .search-list {
-        padding: 20px 0;
-        border-top: 2px #00183b solid;
+        padding: 20px;
         border-bottom: 1px #00183b solid;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         .search-condition {
             // border: 1px black solid;
             display: flex;
             flex-direction: column;
+            padding: 0 10px;
 
             >* {
                 margin: 10px 0;
@@ -158,30 +194,34 @@ nav {
                 }
             }
 
+            input{
+                width: 120px;
+            }
             .btn-group {
+                width: 120px;
                 .btn-drop {
                     border: 2px solid #00183b71;
                     border-right: #0000ff00;
                     text-align: start;
-                    letter-spacing: 12px;
                 }
 
                 .dropdown-toggle {
                     border: 2px solid #00183b71;
                     border-left: #0000ff00;
-                    // text-align: end;
                 }
             }
 
             .btn-brand-proxy {
+                width: 120px;
                 border: 2px solid #00183b71;
                 text-align: start;
-                letter-spacing: 12px;
+                transition: .2s;
 
                 &:hover {
-                    background-color: #00183b;
-                    color: #a9ccff;
-                    // border: 2px solid #a9ccff;
+                    background: linear-gradient(-360deg, #3a80d52f, #6ebbe200, #6ebbe200);
+                    box-shadow: #00183b 2px 2px 5px;
+                    font-weight: bolder;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -211,7 +251,7 @@ nav {
 
                 .nav-tabs {
                     border: none;
-                    border-bottom: 2px solid #5795f1;
+                    border-bottom: 2px solid #079fc9;
                     margin: 0;
                     line-height: 2.5em;
                 }
@@ -234,8 +274,8 @@ nav {
                 .nav-tabs li a:hover,
                 .nav-tabs li.active a {
                     background: #fff;
-                    color: #5795f1;
-                    border: 2px solid #2569cf;
+                    color: #079fc9;
+                    border: 2px solid #079fc9;
                     border-bottom-color: transparent;
                 }
 
