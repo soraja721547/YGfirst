@@ -34,9 +34,9 @@ $(function () {
     $(window).scroll(function () {
       var scrollVal = $(this).scrollTop();
       if(scrollVal >= 100){
-          $('.logo').css('background-image','url(../img/LOGO2.png)');
+          $('.logo').css('background-image','url(../img/LOGO4.png)');
       }else if(scrollVal < 100){
-        $('.logo').css('background-image','url(../img/LOGO3.png)');
+        $('.logo').css('background-image','url(../img/LOGO2.png)');
       }
     //   console.log(scrollVal);
     });
